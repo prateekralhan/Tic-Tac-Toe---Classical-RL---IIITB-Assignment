@@ -24,3 +24,18 @@ gets 10 points, if the environment wins, the agent loses 10 points. And if the g
 so for each move, it gets a -1 point.
 
 ***Following is a sample episode for your reference:***
+
+![image](https://user-images.githubusercontent.com/29462447/90339220-133a3580-e00d-11ea-8521-596abe31bff1.png)
+
+In this episode, the environment wins as it is able to make 15 first (8+6+1).  After the agent places 1 in one of the grids, the environment rewards it (with a negative
+reward of -1) and makes a next move of placing 8 in one of the remaining cells.
+
+## Usage:
+1. TCGame_Env.py - environment file
+2. TicTacToe_Agent.ipynb - agent file
+
+### Goals
+1. We use the environment that is created in TCGame_Env.py to write the learning algorithm.
+2. Create an **MDP** for Numerical Tic-Tac-Toe game. 
+3. Build an agent that learns the game by **Q-Learning**. ***( You can choose the hyperparameters (epsilon (decay rate), learning-rate, discount factor) of your choice. For that, you can train the model iteratively to obtain a good combination of hyperparameters.)***
+4. **Q-values convergence** - Check whether Q-values learnt by the agent have converged or not. Sample 4 state-action pairs and plot it with the number of episodes to understand the convergence.
